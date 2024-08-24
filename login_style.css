@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo{
+    height: 60px;
+    border-radius: 50px;
+}
+
+.brand_name{
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+.user_details{
+    position: absolute;
+    left: 1200px;
+}
+
+.fa{
+    width: 50px;
+    height: 50px;   
+    padding-top: 15px;
+    position: relative;
+    left: 18px;
+}
+
+.icontext{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 20px;
+}
+
+.form-group .forget{
+    position: absolute;
+    bottom: 54px;
+    right: 15px;
+}
