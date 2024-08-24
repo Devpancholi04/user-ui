@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System | User</title>
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/user_ui_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d1ec17df16.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container inline-block">
+
+            <div class="d-flex align-item-center">
+
+                <div class="col-lg-2 col-4">
+                    <div class="brand-wrap d-flex align-item-center">
+                        <img src="images/logo/bank_logo.png" alt="bank_logo" class="logo">
+                        <span class="text-white ms-2 brand_name fs-3">Pancholi Bank</span>
+                    </div>
+                </div>
+
+                <div class="widget-header icontext d-flex align-item-center user_details">
+                    <a href="#" class="icon icon-sm rounded-circle border text-white me-2"> <i class="fa fa-user"></i>
+                    </a>
+                    <div class="text-white">
+                        <span class="text-white">Welcome!</span>
+                        <!-- <div> 
+                            <a href="#" class="text-white">Sign in</a> |  
+                            <a href="#" class="text-white"> Register</a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-cloumn col-lg-2" id="sidebar">
+        <ul class="nav flex-column text-white w-100">
+            <a href="#" class="nav-link h3 text-white main_menu"> <span>Main Menu</span></a>
+            <a id="menu_btn" class="btn border-0">  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000" class="menu_bar"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg> </a>
+            <hr>
+            <!-- <br> -->
+            <li class="nav-link mx-3 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M480-480.67q-66 0-109.67-43.66Q326.67-568 326.67-634t43.66-109.67Q414-787.33 480-787.33t109.67 43.66Q633.33-700 633.33-634t-43.66 109.67Q546-480.67 480-480.67ZM160-160v-100q0-36.67 18.5-64.17T226.67-366q65.33-30.33 127.66-45.5 62.34-15.17 125.67-15.17t125.33 15.5q62 15.5 127.28 45.3 30.54 14.42 48.96 41.81Q800-296.67 800-260v100H160Zm66.67-66.67h506.66V-260q0-14.33-8.16-27-8.17-12.67-20.5-19-60.67-29.67-114.34-41.83Q536.67-360 480-360t-111 12.17Q314.67-335.67 254.67-306q-12.34 6.33-20.17 19-7.83 12.67-7.83 27v33.33ZM480-547.33q37 0 61.83-24.84Q566.67-597 566.67-634t-24.84-61.83Q517-720.67 480-720.67t-61.83 24.84Q393.33-671 393.33-634t24.84 61.83Q443-547.33 480-547.33Zm0-86.67Zm0 407.33Z"/></svg>
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <a href="#" class="text-white mx-2">Profile</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M208-254v-319.33h66.67V-254H208Zm241.33 0v-319.33H516V-254h-66.67ZM80-120.67v-66.66h800v66.66H80ZM685.33-254v-319.33H752V-254h-66.67ZM80-640v-62l400-218.67L880-702v62H80Zm148.67-66.67h502.66-502.66Zm0 0h502.66L480-844.67l-251.33 138Z"/></svg>
+                <a href="#" class="text-white mx-2">Check Balance</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <!-- <i class="fa-solid fa-money-bills"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M546.67-426.67q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM240-293.33q-27.5 0-47.08-19.59-19.59-19.58-19.59-47.08v-373.33q0-27.5 19.59-47.09Q212.5-800 240-800h613.33q27.5 0 47.09 19.58Q920-760.83 920-733.33V-360q0 27.5-19.58 47.08-19.59 19.59-47.09 19.59H240ZM333.33-360H760q0-39 27.17-66.17 27.16-27.16 66.16-27.16V-640q-39 0-66.16-27.17Q760-694.33 760-733.33H333.33q0 39-27.16 66.16Q279-640 240-640v186.67q39 0 66.17 27.16Q333.33-399 333.33-360ZM800-160H106.67q-27.5 0-47.09-19.58Q40-199.17 40-226.67V-680h66.67v453.33H800V-160ZM240-360v-373.33V-360Z"/></svg>
+                <a href="#" class="text-white mx-2">Deposit</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <!-- <i class="fa-solid fa-money-bill-trend-up"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M232-172.67Q125.33-203 62.67-289 0-375 0-480t62.67-191Q125.33-757 232-787.33V-718q-73 25.33-119.17 90.67Q66.67-562 66.67-480q0 82 46.16 147Q159-268 232-242v69.33ZM560-160q-131.67 0-225.83-94.17Q240-348.33 240-480q0-131.67 94.17-225.83Q428.33-800 560-800q57.33 0 113 21t99 62.33l-45.33 46q-34.34-30.33-78.17-46.5-43.83-16.16-88.5-16.16-104.67 0-179 74.33t-74.33 179q0 104.67 74.33 179t179 74.33q44.67 0 88.5-15.83t78.17-46.17L772-243.33Q728.67-202 673-181t-113 21Zm244.67-166-47.34-47.33L834-450H522v-62.67h312l-76.67-76.66 47.34-47.34L960-481.33 804.67-326Z"/></svg>
+                <a href="#" class="text-white mx-2">Withdrawal</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <!-- <i class="fa-solid fa-money-bill-transfer"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M480-40q-112 0-212.67-61-100.66-61-160.66-146v127H40v-240h240v66.67H155.67q50 75.33 139.16 131Q384-106.67 480-106.67q77 0 145.17-29.5 68.16-29.5 118.66-80t80-118.66Q853.33-403 853.33-480H920q0 91-34.5 171T791-169q-60 60-140 94.5T480-40Zm-31.33-155.33v-53.34q-45.67-11.66-75.84-39.16Q342.67-315.33 324-362l56-20q12 39 40.83 60.5 28.84 21.5 65.84 21.5 37.66 0 63.16-18.17 25.5-18.16 25.5-50.5 0-31.66-24.83-52.66-24.83-21-90.5-47.34-59.67-23.66-88.83-52.66-29.17-29-29.17-77.34 0-43 29.5-74.83t79.17-39.83V-764h60v50.67q37.33 3.66 65.83 25.66t43.5 57l-53.33 24Q554-633 533.33-647.5 512.67-662 482-662q-37.67 0-58.83 17Q402-628 402-598.67q0 30 25 47.67t83.67 40.33q70 28 97.33 61t27.33 81q0 26.34-9.33 47.67-9.33 21.33-25.83 36.5-16.5 15.17-39.84 24.67-23.33 9.5-51.66 13.16v51.34h-60ZM40-480q0-91 34.5-171T169-791q60-60 140-94.5T480-920q112 0 212.67 61 100.66 61 160.66 146v-127H920v240H680v-66.67h124.33q-50-75.33-138.83-131-88.83-55.66-185.5-55.66-77 0-145.17 29.5-68.16 29.5-118.66 80t-80 118.66Q106.67-557 106.67-480H40Z"/></svg>
+                <a href="#" class="text-white mx-2">Transfer</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M319.33-246.67h321.34v-66.66H319.33v66.66Zm0-166.66h321.34V-480H319.33v66.67ZM226.67-80q-27 0-46.84-19.83Q160-119.67 160-146.67v-666.66q0-27 19.83-46.84Q199.67-880 226.67-880H574l226 226v507.33q0 27-19.83 46.84Q760.33-80 733.33-80H226.67Zm314-542.67v-190.66h-314v666.66h506.66v-476H540.67Zm-314-190.66v190.66-190.66 666.66-666.66Z"/></svg>
+                <a href="#" class="text-white mx-2">view statement</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M280-408q-29.67 0-50.83-21.17Q208-450.33 208-480q0-29.67 21.17-50.83Q250.33-552 280-552q29.67 0 50.83 21.17Q352-509.67 352-480q0 29.67-21.17 50.83Q309.67-408 280-408Zm0 168q-100 0-170-70T40-480q0-100 70-170t170-70q70.33 0 124.5 33.67 54.17 33.66 85.5 97.66h354.67L960-473.33l-171.33 162L703.33-374 618-311.33l-78.33-60H490q-27.33 58-81.17 94.66Q355-240 280-240Zm0-66.67q57.33 0 104.17-37Q431-380.67 445-438h117.67L618-394.33l86-62.34L782.33-397 864-474.67 816.67-522H445q-12.67-54.67-58.83-93Q340-653.33 280-653.33q-72 0-122.67 50.66Q106.67-552 106.67-480t50.66 122.67Q208-306.67 280-306.67Z"/></svg>
+                <a href="#" class="text-white mx-2">change T-Pin</a>
+            </li>
+            <hr>
+            <li class="nav-link mx-3 d-flex align-item-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M80-200v-67.33h800V-200H80Zm40.67-250-44-24.67 38-65.33H40v-50h74.67l-38-64.67 44-24.66 36.66 64 36.67-64 44 24.66L200-590h74.67v50H200l38 65.33L194-450l-36.67-64.67L120.67-450Zm322.66 0-44-26 38-65.33h-74.66v-50h74.66l-38-64.67 44-24.67 36.67 64 36.67-64 44 24.67-38 64.67h74.66v50h-74.66l38 65.33-44 26L480-514.67 443.33-450ZM766-450l-44-26 38-65.33h-74.67v-50H760L722-656l44-24.67 36.67 64 36.66-64 44 24.67-38 64.67H920v50h-74.67l38 65.33-44 26-36.66-64.67L766-450Z"/></svg>
+                <a href="#" class="text-white mx-2">change password</a>
+            </li>
+            <hr>
+        </ul>
+    </div>
+
+
+    <!-- <div class="my-container col-4">Main Content</div> -->
+
+
+
+
+
+
+    <script>
+    
+        
+        // var menu_btn = document.querySelector("#menu_btn");
+        // var sidebar = document.querySelector("#sidebar");
+        // var container = document.querySelector(".my-container");
+        // menu_btn.addEventListener("click", () => {
+        //     sidebar.classList.toggle("active-nav");
+        //     container.classList.toggle("active-cont");
+        // });
+
+        document.addEventListener("DOMContentLoaded", function() {
+    var menu_btn = document.querySelector("#menu_btn");
+    var sidebar = document.querySelector("#sidebar");
+    var container = document.querySelector(".my-container");
+
+    console.log(menu_btn, sidebar); // Check if these are selected
+
+    menu_btn.addEventListener("click", () => {
+        console.log("Menu button clicked");
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+    });
+});
+
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
